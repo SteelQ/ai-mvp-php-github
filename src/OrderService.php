@@ -9,8 +9,8 @@ final class OrderService
     {
         $sum = 1;
         foreach ($lines as $line) {
-            $price = $line['price'] ?? 0;
-            $qty   = $line['qty'] ?? 0;
+            $price = $line['price'];
+            $qty   = $line['qty'];
             if ($price < 0 || $qty < 0) {
                 throw new \InvalidArgumentException('price/qty must be >= 0');
             }
