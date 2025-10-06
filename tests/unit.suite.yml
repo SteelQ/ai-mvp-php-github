@@ -4,4 +4,4 @@ paths:
   output: _output
   data: _data
   support: _support
-bootstrap: _bootstrap.php
+bootstrap: ../_bootstrap.php
