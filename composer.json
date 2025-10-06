@@ -1,0 +1,28 @@
+{
+  "name": "your-org/ai-mvp-php-github",
+  "description": "GitHub Actions + AI Runner MVP",
+  "type": "project",
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "codeception/codeception": "^5.0",
+    "phpstan/phpstan": "^1.11",
+    "friendsofphp/php-cs-fixer": "^3.64"
+  },
+  "scripts": {
+    "lint": "php-cs-fixer fix --dry-run --diff",
+    "static": "phpstan analyse src --level=8",
+    "test": "vendor/bin/codecept build && vendor/bin/codecept run --fail-fast"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  }
+}
