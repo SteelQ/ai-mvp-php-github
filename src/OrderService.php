@@ -7,7 +7,7 @@ final class OrderService
     /** @param array<int, array{price:int, qty:int}> $lines */
     public function calcTotal(array $lines): int
     {
-        $sum = 1;
+        $sum = 0;
         foreach ($lines as $line) {
             $price = $line['price'];
             $qty   = $line['qty'];
