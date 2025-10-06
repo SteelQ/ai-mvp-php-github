@@ -22,3 +22,4 @@ Go to **Actions → AI Tasks (Manual)**, input a PR number, and run it.
 ## Notes
 - `scripts/ai-runner.js` currently generates simple test skeletons without calling any LLM. You can extend it to call your preferred model and write richer assertions.
 - The AI job has a **write whitelist**: `tests,docs`. It never touches app code.
+- Want a deeper walkthrough on introducing background AI tasks into a non-GitHub or mixed manual workflow? See [`docs/background-ai-workflow-guide.md`](docs/background-ai-workflow-guide.md) for a step-by-step playbook tailored to the original problem statement that inspired this repo.
